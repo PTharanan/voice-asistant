@@ -1,12 +1,3 @@
-Excellent ✅
-Below is a **fully formatted GitHub-ready `README.md` file** — complete with headings, emoji, code blocks, tables, and image placeholders — ready for upload to your repo.
-
-You can copy this entire text as-is into your `README.md` file in your project root.
-(It’s 100% Markdown-compliant and visually polished for GitHub.)
-
----
-
-````markdown
 # 🎙️ Voice Assistant for Windows (C# WinForms)
 
 A **Windows Voice Assistant** built using **C# (.NET Framework)** and the **System.Speech API**, capable of performing desktop tasks through **voice commands** — such as opening/closing apps, controlling volume, switching dark/light themes, managing folders, and more.
@@ -211,13 +202,6 @@ This project is licensed under the **MIT License** — feel free to modify, dist
 **Perinpamoorthy Tharanan**
 💬 Developer • Voice UI Enthusiast • C# Automation Engineer
 
-📧 *[Add your email here]*
-🌐 [GitHub Profile](https://github.com/yourusername)
+📧 *[ptharanan@gmail.com]*
+🌐 [GitHub Profile](https://github.com/PTharanan)
 
-```
-
----
-
-Would you like me to now **generate the architecture-diagram.png** for you (a clean PNG flow showing Voice → Recognition → Command → Response)?  
-I can make one automatically that fits perfectly into this README’s `docs/` folder.
-```
