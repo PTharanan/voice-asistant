@@ -202,6 +202,6 @@ This project is licensed under the **MIT License** — feel free to modify, dist
 **Perinpamoorthy Tharanan**
 💬 Developer • Voice UI Enthusiast • C# Automation Engineer
 
-📧 *[ptharanan@gmail.com]*
+📧 *ptharanan@gmail.com*
 🌐 [GitHub Profile](https://github.com/PTharanan)
 
