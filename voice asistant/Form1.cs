@@ -100,7 +100,7 @@ namespace voice_asistant
 
                 case "exit":
                     Application.Exit();
-                    return;  // முழு function-உம் stop பண்ண
+                    return;  // Application closed
 
                 case "how are you":
                     response = "I'm fine thanks!";
@@ -113,17 +113,17 @@ namespace voice_asistant
                 case "volume up":
                     for (int i = 0; i < 2; i++)
                     {
-                        keybd_event(VK_VOLUME_UP, 0, KEYEVENTF_EXTENDEDKEY, UIntPtr.Zero);
-                        keybd_event(VK_VOLUME_UP, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+                        keybd_event(VK_VOLUME_UP, 0, KEYEVENTF_EXTENDEDKEY, UIntPtr.Zero); // Volume up key press
+                        keybd_event(VK_VOLUME_UP, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);    // Volume up key release
                     }
                     response = "Volume increased";
                     break;
 
                 case "volume down":
-                    for (int i = 0; i < 2; i++)
+                    for (int i = 0; i < 2; i++) 
                     {
-                        keybd_event(VK_VOLUME_DOWN, 0, KEYEVENTF_EXTENDEDKEY, UIntPtr.Zero);
-                        keybd_event(VK_VOLUME_DOWN, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+                        keybd_event(VK_VOLUME_DOWN, 0, KEYEVENTF_EXTENDEDKEY, UIntPtr.Zero); // Volume down key press
+                        keybd_event(VK_VOLUME_DOWN, 0, KEYEVENTF_KEYUP, UIntPtr.Zero); // Volume down key release
                     }
                     response = "Volume decreased";
                     break;
@@ -179,13 +179,13 @@ namespace voice_asistant
                 default:
                     if (spoken.StartsWith("open "))
                     {
-                        string appName = spoken.Substring(5).Trim();
+                        string appName = spoken.Substring(5).Trim(); // open command remove to tacke app name only
                         OpenApp(appName);
                         return;
                     }
                     else if (spoken.StartsWith("close "))
                     {
-                        string appName = spoken.Substring(6).Trim();
+                        string appName = spoken.Substring(6).Trim(); // close command remove to tacke app name only
                         CloseApp(appName);
                         return;
                     }
